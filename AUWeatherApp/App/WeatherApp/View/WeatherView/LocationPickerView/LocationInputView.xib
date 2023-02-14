@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UYD-LW-ZK7" customClass="LocationInputView" customModule="AUWeatherApp">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="StW-Cv-oIb">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="80"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CvM-IV-ekG">
+                            <rect key="frame" x="20" y="5" width="460" height="70"/>
+                            <subviews>
+                                <button toolTip="My Current Location" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ7-yb-erW">
+                                    <rect key="frame" x="0.0" y="15" width="92.5" height="40"/>
+                                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <accessibility key="accessibilityConfiguration" hint="Select My Current Location" identifier="MyCurrentLocation" label="MyCurrentLocation"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="WWl-Zm-F6a"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="My">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="location.fill.viewfinder" catalog="system" symbolScale="large"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </state>
+                                    <state key="selected" title="My">
+                                        <color key="titleColor" name="AccentColor"/>
+                                        <imageReference key="image" image="location.square.fill" catalog="system" symbolScale="large"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="myLocationButtonTap:" destination="UYD-LW-ZK7" eventType="touchUpInside" id="V9c-rm-s2Q"/>
+                                    </connections>
+                                </button>
+                                <textField toolTip="Search Location" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Select Location" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3au-xs-KOD">
+                                    <rect key="frame" x="102.5" y="15" width="255" height="40"/>
+                                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <accessibility key="accessibilityConfiguration" hint="User Search Location" identifier="TextLocation" label="TextLocation"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" textContentType="location"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="StW-Cv-oIb" id="mbc-TN-8Bj"/>
+                                    </connections>
+                                </textField>
+                                <button toolTip="Search Fron City" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKB-lm-Vwc">
+                                    <rect key="frame" x="367.5" y="15" width="92.5" height="40"/>
+                                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <accessibility key="accessibilityConfiguration" hint="Search City" identifier="CityButton" label="City"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="City">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="location.magnifyingglass" catalog="system" symbolScale="large"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </state>
+                                    <state key="selected" title="City">
+                                        <color key="titleColor" systemColor="linkColor"/>
+                                        <imageReference key="image" image="magnifyingglass.circle.fill" catalog="system" symbolScale="large"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="searchButtonTap:" destination="UYD-LW-ZK7" eventType="touchUpInside" id="7ow-y8-pjw"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="3au-xs-KOD" firstAttribute="height" secondItem="jZ7-yb-erW" secondAttribute="height" id="qBs-gn-jrP"/>
+                                <constraint firstItem="gKB-lm-Vwc" firstAttribute="width" secondItem="jZ7-yb-erW" secondAttribute="width" id="seh-q0-eys"/>
+                                <constraint firstItem="gKB-lm-Vwc" firstAttribute="height" secondItem="jZ7-yb-erW" secondAttribute="height" id="wyi-1p-TRs"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="inputView" label="inputView">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CvM-IV-ekG" secondAttribute="trailing" constant="20" id="H0D-ja-1Q6"/>
+                        <constraint firstItem="CvM-IV-ekG" firstAttribute="top" secondItem="StW-Cv-oIb" secondAttribute="top" constant="5" id="XJk-Wy-usK"/>
+                        <constraint firstAttribute="bottom" secondItem="CvM-IV-ekG" secondAttribute="bottom" constant="5" id="f0w-kw-gXd"/>
+                        <constraint firstItem="CvM-IV-ekG" firstAttribute="leading" secondItem="StW-Cv-oIb" secondAttribute="leading" constant="20" id="mEV-z4-Fex"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhx-tT-iCA" userLabel="Empty Label">
+                    <rect key="frame" x="0.0" y="80" width="500" height="0.0"/>
+                    <accessibility key="accessibilityConfiguration" hint="Please Select Location" identifier="SelectLocation" label="Please Select Location"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NXc-Wz-etZ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" hint="Location Input Choice" identifier="LocationInputView" label="LocationInputView">
+                <bool key="isElement" value="NO"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="StW-Cv-oIb" firstAttribute="bottom" secondItem="hhx-tT-iCA" secondAttribute="top" id="0xo-52-iN9"/>
+                <constraint firstAttribute="top" secondItem="StW-Cv-oIb" secondAttribute="top" id="8aI-97-1hS"/>
+                <constraint firstItem="hhx-tT-iCA" firstAttribute="bottom" secondItem="UYD-LW-ZK7" secondAttribute="bottom" id="9ty-iW-Jo4"/>
+                <constraint firstItem="StW-Cv-oIb" firstAttribute="leading" secondItem="UYD-LW-ZK7" secondAttribute="leading" id="DUp-Y3-YKr"/>
+                <constraint firstItem="hhx-tT-iCA" firstAttribute="leading" secondItem="UYD-LW-ZK7" secondAttribute="leading" id="J3c-Ii-mHm"/>
+                <constraint firstAttribute="trailing" secondItem="hhx-tT-iCA" secondAttribute="trailing" id="gQY-Fp-GcS"/>
+                <constraint firstAttribute="trailing" secondItem="StW-Cv-oIb" secondAttribute="trailing" id="zqS-so-Pjs"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMyLocation" destination="jZ7-yb-erW" id="02L-wp-r4B"/>
+                <outlet property="btnSearch" destination="gKB-lm-Vwc" id="gOt-k2-fuF"/>
+                <outlet property="hstackInputViews" destination="CvM-IV-ekG" id="zkC-4n-lHR"/>
+                <outlet property="txtLocation" destination="3au-xs-KOD" id="7UI-Ko-yMr"/>
+            </connections>
+            <point key="canvasLocation" x="-188" y="-666"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location.fill.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="location.magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="location.square.fill" catalog="system" width="128" height="114"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
