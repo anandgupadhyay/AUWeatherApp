@@ -1,7 +1,8 @@
 # AUWeatherApp
 *Weather App to Show User Options to input Location in various ways and show weather at the user's selected location.*
 
-### Screen Shot ###
+
+![ScreenShot](https://user-images.githubusercontent.com/9990064/218646403-65f47a6d-1de2-4bad-bc1b-f05690df9187.png)
 
 
 ### Features
