@@ -4,7 +4,6 @@
 ### Screen Shot ###
 
 
-
 ### Features
 - Allow User to select Locations from various Options
   - My: User's Current Location
