@@ -25,6 +25,7 @@
 		FE69B564299A4D4D0088A1C2 /* SingleWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = FE69B563299A4D4D0088A1C2 /* SingleWeather.json */; };
 		FE69B567299A528E0088A1C2 /* MockNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE69B566299A528E0088A1C2 /* MockNetworkHelper.swift */; };
 		FE69B569299A52BE0088A1C2 /* MokeWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE69B568299A52BE0088A1C2 /* MokeWeatherViewModel.swift */; };
+		FE8323AF299B52F8000037B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE8323AE299B52F7000037B5 /* README.md */; };
 		FE84D8E229953BAD00758E35 /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84D8E129953BAD00758E35 /* NetworkServiceProvider.swift */; };
 		FE84D8E429953BCA00758E35 /* NetrowkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84D8E329953BCA00758E35 /* NetrowkError.swift */; };
 		FE84D8E629953BEA00758E35 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84D8E529953BEA00758E35 /* NetworkingConstants.swift */; };
@@ -86,6 +87,7 @@
 		FE69B563299A4D4D0088A1C2 /* SingleWeather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SingleWeather.json; sourceTree = "<group>"; };
 		FE69B566299A528E0088A1C2 /* MockNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkHelper.swift; sourceTree = "<group>"; };
 		FE69B568299A52BE0088A1C2 /* MokeWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokeWeatherViewModel.swift; sourceTree = "<group>"; };
+		FE8323AE299B52F7000037B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FE84D8E129953BAD00758E35 /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
 		FE84D8E329953BCA00758E35 /* NetrowkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetrowkError.swift; sourceTree = "<group>"; };
 		FE84D8E529953BEA00758E35 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		FEA40FED2994B386000E7237 = {
 			isa = PBXGroup;
 			children = (
+				FE8323AE299B52F7000037B5 /* README.md */,
 				FEA40FF82994B386000E7237 /* AUWeatherApp */,
 				FEA4100F2994B38B000E7237 /* AUWeatherAppTests */,
 				FEA410192994B38B000E7237 /* AUWeatherAppUITests */,
@@ -477,6 +480,7 @@
 				FE69B564299A4D4D0088A1C2 /* SingleWeather.json in Resources */,
 				FE84D8FF2995435C00758E35 /* NoDataView.xib in Resources */,
 				FEA410392994B4EA000E7237 /* LaunchScreen.storyboard in Resources */,
+				FE8323AF299B52F8000037B5 /* README.md in Resources */,
 				FEA410032994B38A000E7237 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
