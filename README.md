@@ -27,7 +27,6 @@
 - Unit and UI Test cases
 - No Thir party Libraries Used
 
-
 **How to Run**
 - Xcode 13.2.1 or Above
 - Supported iOS 15.2 and above

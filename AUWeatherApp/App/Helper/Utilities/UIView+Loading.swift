@@ -80,6 +80,23 @@ extension UIView{
         }
         return nib.first as! T
     }
+    
+    //Animate a button when clicked
+    // usage: button.animate()
+    func animate() {
+          UIView.animate(withDuration: 0.1, animations: {
+            self.transform = self.transform.scaledBy(x: 0.3, y: 0.3)
+//            let image = UIImage(named: "BlackStar")
+//            self.setImage(image, for: .normal)
+          }, completion: { _ in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.transform = CGAffineTransform.identity
+//                let image = UIImage(named: "RedStar")
+//                self.setImage(image, for: .normal)
+            })
+          })
+    }
+    
 }
 
 
