@@ -119,4 +119,11 @@ extension Dispatch {
 }
 
 
+/*
+ For creating Single large Image from Multiple Images
+ https://www.peko-step.com/en/tool/combine-images.html
+ For Generating Model from JSON response
+ https://app.quicktype.io/
+ 
+ */
 

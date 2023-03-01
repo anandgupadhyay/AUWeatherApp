@@ -32,7 +32,6 @@ enum Error: Swift.Error, LocalizedError {
     case network
     case dataCorrupted
     case apiKeyIsMissing
-    
     case other(String)
     
     var errorDescription: String? {
